@@ -56,7 +56,7 @@ function alterarContexto(contexto) {
     contexto.classList.remove("active");
   });
   html.setAttribute("data-contexto", contexto);
-  banner.setAttribute("src", `/Fokus-projeto-base/imagens/${contexto}.png`);
+  banner.setAttribute("src", `./imagens/${contexto}.png`);
   switch (contexto) {
     case "foco":
       textChange.innerHTML = `Otimize sua produtividade,<br>
@@ -99,7 +99,7 @@ function iniciar() {
   audioPlay.play()  
   intervaloId = setInterval(contagemRegressiva, 1000);
   iniciarOuPausarBt.textContent = "Pausar"
-  bannerPausePlay.setAttribute("src", '/Fokus-projeto-base/imagens/pause.png')
+  bannerPausePlay.setAttribute("src", './imagens/pause.png')
  
 }
 
@@ -107,7 +107,7 @@ function zerar() {
   clearInterval(intervaloId);
   intervaloId = null;
   iniciarOuPausarBt.textContent = "Começar"
-  bannerPausePlay.setAttribute("src", '/Fokus-projeto-base/imagens/play_arrow.png')
+  bannerPausePlay.setAttribute("src", './imagens/play_arrow.png')
 }
 
 function mostrarTempo () {
